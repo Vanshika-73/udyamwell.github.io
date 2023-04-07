@@ -4020,12 +4020,18 @@ ul {
   .special_cource .single_special_cource .special_cource_text {
     padding: 20px 15px 15px;
   }
+  .about__video {
+    width: 300px; 
+   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   /* line 42, E:/172 Etrain Education/172_Etrain_Education_html/sass/_special_cource.scss */
   .special_cource .single_special_cource .special_cource_text {
     padding: 20px 15px 15px;
+  }
+  .about__video {
+   width: 500px; 
   }
 }
 
@@ -4034,6 +4040,7 @@ ul {
   .special_cource .single_special_cource .special_cource_text {
     padding: 20px 15px 15px;
   }
+  
 }
 
 /* line 61, E:/172 Etrain Education/172_Etrain_Education_html/sass/_special_cource.scss */
