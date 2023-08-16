@@ -24,7 +24,31 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
+<style>
+    .saathiForm{
+        width: 80%;
+    }
+    .field{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @media only screen and (max-width:940px) {
+        .saathiForm{
+            width: 95%;
+        }
+    }
+    @media only screen and (max-width:590px) {
+        .saathiForm{
+            width: 100%;
+        }
+        .field{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+</style>
 <body>
     <!--::header part start::-->
     <header class="main_menu single_page_menu">
@@ -107,10 +131,10 @@
     </div>
 </section>
     <!-- form of udyam sheel -->
-    <section style="width: 80%;margin: 100px auto;text-align: left; padding: 40px;">
+    <section class="saathiForm" style="margin: 100px auto;text-align: left; padding: 40px;">
         <h2 class="section_tittle text-center mt-5 mb-4">पंजीकरण</h2>
         <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8rdTq9MRAmbWfpZhmKirrC1A8BFwElk_zbSrWsGOQOGnIZg/formResponse">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="field">
                 <div>
                     <label for="" class="mr-3 mt-4" style="font-size: 18px;">Name /  आपका नाम</label>
                     <input type="text" name="entry.449441306" placeholder="Enter your name" required/> <br>
@@ -122,7 +146,7 @@
             </div>
             <hr>
             <!--  -->
-            <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div  class="field">
                 <div>
                  <label for="" class="mr-3 mt-3" style="font-size: 18px;">Name of your Enterprise /  आपके उद्यम का नाम</label>
                  <input type="text" name="entry.1579784548" placeholder="Enterise Name" required/> <br>
@@ -134,7 +158,7 @@
             </div>
             <hr>
             <!--  -->
-            <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="field">
             <div>
                 <label for="" class="mr-3 mt-3" style="font-size: 18px;">Email Address/  मेल पता</label>
                 <input type="email" name="entry.1894326054" placeholder="Enter your Email" required/> <br>
